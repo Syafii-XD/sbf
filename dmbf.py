@@ -1,14 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# ------ [ Gausah Dioprek Ntar Error ] ------ #
-Author    = 'Mhd Syafii'
-Facebook  = 'Facebook.com/fikritampan305'
-Instagram = 'Instagram.com/fi_sinaga'
-Whatsapp  = '081269496231'
-YouTube   = 'Youtube.com/channel/UCZqnZlJ0jfoWSnXrNEj5JHA'
-Syafii  = 100080716718035
-Postingan = 115753054458585
-komentar   = '\n\nhttps://www.facebook.com/' + str(Postingan)
 ##### >>>> IMPORT MODULE
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess
 from random import randint
