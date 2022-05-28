@@ -122,6 +122,9 @@ def mkdir_data_login():
     # Make Directory Login Data
     try:os.mkdir("login")
     except:pass
+    # Make Directory DUMP
+    try:os.mkdir("dump")
+    except:pass
     # Make Directory Result
     try:os.mkdir("CP")
     except:pass
