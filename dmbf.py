@@ -324,37 +324,36 @@ def menu():
 def publik():
     global file_dump
     try:
-        try:
             token  = open('login/token.json','r').read()
             cookie = {'cookie':open('login/cookie.json','r').read()}
-        except:
-            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
+    except:
+          print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
             log_cookie()
-        print(' | ')
-        print('%s[%s•%s] %sContoh : 100080716718035,100080716717023'%(J,P,J,P))
-        print(' | ')
-        tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split(',')
-        file_dump = 'dump/%s.json'%(tid[0])
-        try:os.remove(file_dump)
-        except:pass
-        for id in tid :
+          print(' | ')
+          print('%s[%s•%s] %sContoh : 100080716718035,100080716717023'%(J,P,J,P))
+          print(' | ')
+          tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split(',')
+          file_dump = 'dump/%s.json'%(tid[0])
+          try:os.remove(file_dump)
+          except:pass
+          for id in tid :
             try:
-                url = requests.Session.get("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token),cookies,cookie)
-                jso = json.loads(url.text)
+                url= requests.Session().get("https://graph.facebook.com/me?fields=friends.limit(50000)&access_token=%s"%(token),cookies=cookie)
+                z=json.loads(url.text)
                 if len(gabung_sandi) != 1:
                         for x in range(Postingan):
-                            open(file_dump,'a+').write('fik\n')
-                else:
-                        for d in jso["friends"]["data"]:
-                            try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
-                            except:continue
-            except Exception as e:print(f'{P}[•] User ID Tidak Di temukan');menu()
-        jum = open(file_dump,'r').read().splitlines()
-        print(' | ')
-        print('%s[%s•%s] %sBerhasil Dump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
-        print(' | ')
-        print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
-    except Exception as e:print(f'{P}[•] User ID Tidak Di temukan');menu()
+                          for i in z['friends']['data']:
+                            uid = i["id"]
+                            nama = i["name"]
+                            id.append(uid+"<=>"+nama)
+            except KeyError:
+              print(f"{B} | ")
+              print(f"{B} | ")
+              print(f"{P}[•] User id tidak di temukan");os.sys.menu()
+             if len(id) !=0:
+               print(f"{P}[•] Total id : {B}{len(id)}")
+               fii_xd()
+             else:print(f"{P}[•]{M} Maaf total id : {B}{len(id)}");exit()
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
 def main_folls():
     global file_dump,cookie
