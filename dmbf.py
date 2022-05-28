@@ -300,7 +300,7 @@ def menu():
     jalan(f"{M}[0] Log Out ")
     print(f"{B} | ")
     pp = input(f"{P}[•] Pilih Mana : {B}")
-    if pp in ["1","01"]:  gabung_sandi.append(Author);publik()
+    if pp in ["1","01"]:  gabung_sandi.append(Author);publik();fii_xd()
     elif pp in ["2","02"]: tempel_sandi.append('Jangan');main_folls();fii_xd()
     elif pp in ["3","03"]: gabung_sandi.append('direcode');namee()
     elif pp in ["4","04"]: gabung_sandi.append('Mampus');grup()
@@ -333,7 +333,8 @@ def publik():
         except:
             print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
             time.sleep(3)
-            login()
+            log_cookie()
+        print(' | ')
         print('%s[%s•%s] %sContoh : 100080716718035,100080716717023'%(J,P,J,P))
         tid = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split(',')
         file_dump = 'dump/%s.json'%(tid[0])
@@ -353,7 +354,9 @@ def publik():
                             except:continue
             except Exception as e:kecuali(e)
         jum = open(file_dump,'r').read().splitlines()
+        print(' | ')
         print('%s[%s•%s] %sBerhasil Dump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
+        print(' | ')
         print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
     except Exception as e:kecuali(e)
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
