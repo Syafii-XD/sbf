@@ -428,7 +428,6 @@ def publik():
           uid = i["id"]
           nama = i["name"]
           id.append(uid+"<=>"+nama)
-          except:continue
     except KeyError:
         print(f"{B} | ")
         print(f"{B} | ")
