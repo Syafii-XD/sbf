@@ -425,7 +425,9 @@ def publik():
         url= requests.Session().get("https://graph.facebook.com/%s?fields=friends.limit(50000)&access_token=%s"%(_id_,token),cookies=cookie)
         z=json.loads(url.text)
         for i in z['friends']['data']:
-          try:open(file_dump,'a+').write('%s=%s\n'%(uid = i["id"],nama = i["name"]);id.append(uid+"<=>"+nama)
+          uid = i["id"]
+          nama = i["name"])
+          id.append(uid+"<=>"+nama)
           except:continue
     except KeyError:
         print(f"{B} | ")
