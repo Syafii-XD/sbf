@@ -11,7 +11,7 @@ Fikri  = 100080716718035
 Postingan = 115753054458585
 komentar   = '\n\nhttps://www.facebook.com/' + str(Postingan)
 ##### >>>> IMPORT MODULE
-import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,webbrowsur
+import requests,bs4,sys,os,random,time,re,json,uuid,subprocess
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from requests.exceptions import ConnectionError
