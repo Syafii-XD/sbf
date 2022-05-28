@@ -324,8 +324,7 @@ def menu():
     pp = input(f"{P}[•] Pilih Mana : {B}")
     if pp in ["1","01"]:
       massal()
-    elif pp in ["2","02"]:
-        publik()
+    elif pp in ["2","02"]: gabung_sandi.append(Author);publik()
     elif pp in ["3","03"]:
         listteman()
     elif pp in ["4","04"]:
