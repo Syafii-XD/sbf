@@ -297,7 +297,7 @@ def menu():
     jalan(f"{M}[0] Log Out ")
     print(f"{B} | ")
     pp = input(f"{P}[•] Pilih Mana : {B}")
-    if pp in ["1","01"]:  gabung_sandi.append(Fikri);publik();fii_xd()
+    if pp in ["1","01"]:  gabung_sandi.append(Author);publik();fii_xd()
     elif pp in ["2","02"]: tempel_sandi.append('Jangan');main_folls();fii_xd()
     elif pp in ["3","03"]: gabung_sandi.append('direcode');namee()
     elif pp in ["4","04"]: gabung_sandi.append('Mampus');grup()
