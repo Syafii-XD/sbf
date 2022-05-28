@@ -340,7 +340,7 @@ def publik():
         except:pass
         for id in tid :
             try:
-                url = ("https://graph.facebook.com/%s?fields=friends.limit(50000)&access_token=%s"%(id,token))
+                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
                 with requests.Session() as xyz:
                     jso = json.loads(xyz.get(url,cookies=cookie).text)
                     if len(gabung_sandi) != 1:
