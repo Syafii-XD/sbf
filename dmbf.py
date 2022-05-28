@@ -256,6 +256,7 @@ def log_cookie():
 ###### BUAT MENU
 def menu():
     global gabung sandi, tempel_sandi
+    resik()
     gabung_sandi, tempel_sandi = [], []
     try:
         token=open("login/token.json","r").read()
