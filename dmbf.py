@@ -1121,7 +1121,7 @@ def fii_xd():
 					started()
 					for user in id:
 					  id, name = user.split("<=>")
-						coeg.submit(mbasicc,id,asu)
+						coeg.submit(mbasicc,id,fii)
 				exit()
 			elif ter in ["d","D"]:
 				with ThreadPoolExecutor(max_workers=30) as coeg:
@@ -1170,7 +1170,7 @@ def fii_xd():
 							started()
 							for user in id:
 								uid, name = user.split("<=>")
-								coeg.submit(mbasic,id,asu)
+								coeg.submit(mbasic,id,fii)
 						exit()
 					elif ter in ["d","D"]:
 						with ThreadPoolExecutor(max_workers=30) as coeg:
