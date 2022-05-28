@@ -1576,7 +1576,7 @@ def cek_log(id,pw,ua):
 			data.update({i.get("name"):i.get("value")})
 		else:
 			continue
-	data.update({"email":{id}"pass":pw})
+	data.update({"email":id,"pass":pw})
 	run = parser(ses.post(mb+fm.get("action"), data=data, allow_redirects=True).text, "html.parser")
 	if "checkpoint" in ses.cookies:
 		form = run.find("form")
