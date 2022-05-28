@@ -261,9 +261,9 @@ def menu():
     try:
         token=open("login/token.json","r").read()
         cookie = {'cookie':open('login/cookie.json','r').read()}
+        language(cookie)
         get  = requests.Session().get('https://graph.facebook.com/me?access_token=%s'%(token),cookies=cookie)
         gt = requests.get('http://ipinfo.io/json').json()
-        language(cookie)
         lolo=json.loads(get.text)
         lolol=lolo['name']
         lolol_id=lolo['id']
@@ -329,8 +329,7 @@ def publik():
             cookie = {'cookie':open('login/cookie.json','r').read()}
         except:
             print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-            time.sleep(3)
-            login()
+            log_cookie()
         print(' | ')
         print('%s[%s•%s] %sContoh : 100080716718035,100080716717023'%(J,P,J,P))
         print(' | ')
@@ -365,8 +364,7 @@ def main_folls():
         cookie = {'cookie':open('login/cookie.json','r').read()}
     except:
         print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-        time.sleep(3)
-        login()
+        log_cookie()
     print(' | ')
     id = input('%s[%s•%s] %sID Target : %s'%(J,P,J,P,J))
     url = ('https://graph.facebook.com/%s/subscribers?limit=10000&access_token=%s'%(id,token))
@@ -512,7 +510,7 @@ class grup:
             self._pil_ = True
             print(' | ')
             self.second_grup(cookie)
-        else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
+        else:print('%s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
     def cari_gabung(self,url,cookie):
         with requests.Session() as xyz:
             req = xyz.get(url,cookies=cookie)
@@ -681,7 +679,7 @@ class grup:
 ###----------[ DUMP ID FRIENDLIST FROM FRIENDLIST ]---------- ###
 class teman_teman:
     def __init__(self):
-        global file_dump, urutan_crack
+        global file_dump
         urutan_crack = '0'
         try:
             cook    = open('login/cookie.json','r').read()
