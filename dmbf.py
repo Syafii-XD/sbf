@@ -380,8 +380,8 @@ def main_folls():
     print(' | ')
     print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
 def exec_folls(url,token,file):
-print(' | ')
-print("%s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
+  print(' | ')
+  print("%s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
     with requests.Session() as xyz:
         try:
             x = xyz.get(url,cookies=cookie)
