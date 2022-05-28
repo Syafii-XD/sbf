@@ -313,18 +313,19 @@ def menu():
     print(f"{B}___________________________________________")
     print(f"{B} | ")
     jalan(f"{P}[1] Crack massal dari dump id publik ")
-    jalan(f"{P}[2] Crack dari dump id publik")
-    jalan(f"{P}[3] Crack dari dump id pertemanan sendiri")
-    jalan(f"{P}[4] Crack dari dump id followers")
-    jalan(f"{P}[5] Ganti user-agent")
-    jalan(f"{P}[6] Chek results crack")
-    jalan(f"{P}[7] Chek opsi account chekpoint")
+    print(f"{P}[2] Crack dari dump id publik")
+    print(f"{P}[3] Crack dari dump id pertemanan sendiri")
+    print(f"{P}[4] Crack dari dump id followers")
+    print(f"{P}[5] Ganti user-agent")
+    print(f"{P}[6] Chek results crack")
+    print(f"{P}[7] Chek opsi account chekpoint")
     jalan(f"{M}[0] Log Out ")
     print(f"{B} | ")
     pp = input(f"{P}[•] Pilih Mana : {B}")
     if pp in ["1","01"]:
       massal()
-    elif pp in ["2","02"]: gabung_sandi.append(Author);publik()
+    elif pp in ["2","02"]: 
+      publik()
     elif pp in ["3","03"]:
         listteman()
     elif pp in ["4","04"]:
