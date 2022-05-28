@@ -297,11 +297,11 @@ def menu():
     jalan(f"{M}[0] Log Out ")
     print(f"{B} | ")
     pp = input(f"{P}[•] Pilih Mana : {B}")
-    if pp in ["1","01"]:  gabung_sandi.append();publik();fii_xd()
-    elif pp in ["2","02"]: tempel_sandi.append();main_folls();fii_xd()
-    elif pp in ["3","03"]: gabung_sandi.append();namee()
-    elif pp in ["4","04"]: gabung_sandi.append();grup()
-    elif pp in ["5","05"]: gabung_sandi.append();teman_teman()
+    if pp in ["1","01"]:  gabung_sandi();publik();fii_xd()
+    elif pp in ["2","02"]: tempel_sandi();main_folls();fii_xd()
+    elif pp in ["3","03"]: gabung_sandi();namee()
+    elif pp in ["4","04"]: gabung_sandi();grup()
+    elif pp in ["5","05"]: gabung_sandi();teman_teman()
     elif pp in ["6","06"]:
         userset()
     elif pp in ["7","07"]:
