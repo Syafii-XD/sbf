@@ -426,7 +426,7 @@ def publik():
         z=json.loads(url.text)
         for i in z['friends']['data']:
           uid = i["id"]
-          nama = i["name"])
+          nama = i["name"]
           id.append(uid+"<=>"+nama)
           except:continue
     except KeyError:
