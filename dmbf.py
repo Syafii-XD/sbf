@@ -261,9 +261,9 @@ def menu():
     try:
         token=open("login/token.json","r").read()
         cookie = {'cookie':open('login/cookie.json','r').read()}
-        language(cookie)
-        get  = requests.Session().get('https://graph.facebook.com/me?fields=name,id&access_token=%s'%(token),cookies=cookie)
+        get  = requests.Session().get('https://graph.facebook.com/me?access_token=%s'%(token),cookies=cookie)
         gt = requests.get('http://ipinfo.io/json').json()
+        language(cookie)
         lolo=json.loads(get.text)
         lolol=lolo['name']
         lolol_id=lolo['id']
