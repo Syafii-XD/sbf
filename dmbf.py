@@ -1265,6 +1265,8 @@ def api(uid, fii):
             break
         elif "www.facebook.com" in send.json()["error_msg"]:
             try:
+                self.file = file_dump
+                self.open = open(self.file,'r').read().splitlines()
                 token  = open('login/token.json','r').read()
                 cookie = {'cookie':open('login/cookie.json','r').read()}
                 ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
@@ -1309,6 +1311,8 @@ def apiiii(uid, fii):
             break
         elif "www.facebook.com" in send.json()["error_msg"]:
             try:
+                self.file = file_dump
+                self.open = open(self.file,'r').read().splitlines()
                 token  = open('login/token.json','r').read()
                 cookie = {'cookie':open('login/cookie.json','r').read()}
                 ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token),cookies=cookie).json()["birthday"]
@@ -1362,6 +1366,8 @@ def mbasic(uid, fii):
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
+				self.file = file_dump
+				self.open = open(self.file,'r').read().splitlines()
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
@@ -1417,6 +1423,8 @@ def mbasicc(uid, fii):
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
+				self.file = file_dump
+				self.open = open(self.file,'r').read().splitlines()
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
@@ -1471,6 +1479,8 @@ def mobil(uid, fii):
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
+				self.file = file_dump
+				self.open = open(self.file,'r').read().splitlines()
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
@@ -1526,6 +1536,8 @@ def mobill(uid, fii):
 			break
 		elif "checkpoint" in ses.cookies.get_dict().keys():
 			try:
+				self.file = file_dump
+				self.open = open(self.file,'r').read().splitlines()
 				token  = open('login/token.json','r').read()
 				cookie = {'cookie':open('login/cookie.json','r').read()}
 				with requests.Session() as ses:
