@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # GAK USAH DI OPRAK" LAGI,sc sudah nya enak
 # kalau lu recode data hp lu yang hilang!!
-Author    = 'Fikri Syahputra Sinaga'
+Author    = 'Fikri Sinaga'
 Facebook = 'Facebook.com/fikri sinaga'
 Instragram = 'Instragram.com/fikri.sinaga'
 LicenseKey = '06 Hari'
@@ -345,7 +345,7 @@ def publik():
                     jso = json.loads(xyz.get(url,cookies=cookie).text)
                     if len(gabung_sandi) != 1:
                         for x in range(Postingan):
-                            open(file_dump,'a+').write('fii\n')
+                            open(file_dump,'a+').write('fik\n')
                     else:
                         for d in jso["friends"]["data"]:
                             try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
