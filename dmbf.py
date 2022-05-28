@@ -340,7 +340,7 @@ def publik():
         except:pass
         for id in tid :
             try:
-                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
+                url = ("https://graph.facebook.com/%s?fields=friends.limit(50000)&access_token=%s"%(id,token))
                 with requests.Session() as xyz:
                     jso = json.loads(xyz.get(url,cookies=cookie).text)
                     if len(gabung_sandi) != 1:
@@ -350,13 +350,13 @@ def publik():
                         for d in jso["friends"]["data"]:
                             try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
                             except:continue
-            except Exception as e:kecuali(e)
+            except Exception as e:print(f'{P}[•] User ID Tidak Di temukan');menu()
         jum = open(file_dump,'r').read().splitlines()
         print(' | ')
         print('%s[%s•%s] %sBerhasil Dump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
         print(' | ')
-        print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P));fii_xd()
-    except Exception as e:kecuali(e)
+        print('%s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+    except Exception as e:print(f'{P}[•] User ID Tidak Di temukan');menu()
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
 def main_folls():
     global file_dump,cookie
