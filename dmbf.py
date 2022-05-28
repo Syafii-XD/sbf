@@ -382,7 +382,7 @@ def main_folls():
 def exec_folls(url,token,file):
   print(' | ')
   print("%s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
-    with requests.Session() as xyz:
+  with requests.Session() as xyz:
         try:
             x = xyz.get(url,cookies=cookie)
             a = json.loads(x.text)
