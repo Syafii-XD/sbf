@@ -339,13 +339,12 @@ def publik():
         except:pass
         for id in tid :
             try:
-                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
-                with requests.Session() as xyz:
-                    jso = json.loads(xyz.get(url,cookies=cookie).text)
-                    if len(gabung_sandi) != 1:
+                url = requests.Session.get("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token),cookies,cookie)
+                jso = json.loads(url.text)
+                if len(gabung_sandi) != 1:
                         for x in range(Postingan):
                             open(file_dump,'a+').write('fik\n')
-                    else:
+                else:
                         for d in jso["friends"]["data"]:
                             try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
                             except:continue
@@ -456,7 +455,7 @@ class namee:
                                         file = open(self.file_dump,'r').read()
                                         if len(gabung_sandi) != 1:
                                             for x in range(Postingan):
-                                                open(file_dump,'a+').write('fii\n')
+                                                open(file_dump,'a+').write('fik\n')
                                         else:
                                             if id in file:continue
                                             else:
