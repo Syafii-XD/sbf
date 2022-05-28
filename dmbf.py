@@ -85,6 +85,8 @@ tanggal = ("%s-%s-%s"%(hari,_bulan_,tahun))
 id = []
 ok = []
 cp = []
+gabung_sandi = []
+tempel_sandi = []
 loop=0
 
 ###----------[ CLEAR TERMINAL ]---------- ###
@@ -253,13 +255,14 @@ def log_cookie():
     
 ###### BUAT MENU
 def menu():
-    global token,cookie
+    global gabung sandi, tempel_sandi
+    gabung_sandi, tempel_sandi = [], []
     try:
         token=open("login/token.json","r").read()
         cookie = {'cookie':open('login/cookie.json','r').read()}
-        get  = requests.Session().get('https://graph.facebook.com/me?access_token=%s'%(token),cookies=cookie)
-        gt = requests.get('http://ipinfo.io/json').json()
         language(cookie)
+        get  = requests.Session().get('https://graph.facebook.com/me?fields=name,id&access_token=%s'%(token),cookies=cookie)
+        gt = requests.get('http://ipinfo.io/json').json()
         lolo=json.loads(get.text)
         lolol=lolo['name']
         lolol_id=lolo['id']
