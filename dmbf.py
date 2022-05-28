@@ -327,8 +327,7 @@ def publik():
             token  = open('login/token.json','r').read()
             cookie = {'cookie':open('login/cookie.json','r').read()}
     except:
-          print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-            log_cookie()
+          print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));log_cookie()
           print(' | ')
           print('%s[%s•%s] %sContoh : 100080716718035,100080716717023'%(J,P,J,P))
           print(' | ')
@@ -336,8 +335,7 @@ def publik():
           file_dump = 'dump/%s.json'%(tid[0])
           try:os.remove(file_dump)
           except:pass
-          for id in tid :
-            try:
+          try:
                 url= requests.Session().get("https://graph.facebook.com/me?fields=friends.limit(50000)&access_token=%s"%(token),cookies=cookie)
                 z=json.loads(url.text)
                 if len(gabung_sandi) != 1:
@@ -346,14 +344,14 @@ def publik():
                             uid = i["id"]
                             nama = i["name"]
                             id.append(uid+"<=>"+nama)
-            except KeyError:
+          except KeyError:
               print(f"{B} | ")
               print(f"{B} | ")
               print(f"{P}[•] User id tidak di temukan");os.sys.menu()
-             if len(id) !=0:
-               print(f"{P}[•] Total id : {B}{len(id)}")
-               fii_xd()
-             else:print(f"{P}[•]{M} Maaf total id : {B}{len(id)}");exit()
+              if len(id) !=0:
+                print(f"{P}[•] Total id : {B}{len(id)}")
+                fii_xd()
+              else:print(f"{P}[•]{M} Maaf total id : {B}{len(id)}");exit()
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
 def main_folls():
     global file_dump,cookie
