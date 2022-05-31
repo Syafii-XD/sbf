@@ -84,6 +84,8 @@ tanggal = ("%s-%s-%s"%(hari,_bulan_,tahun))
 id = []
 ok = []
 cp = []
+gabung_sandi = []
+tempel_sandi = []
 loop=0
 
 ###----------[ CLEAR TERMINAL ]---------- ###
@@ -375,7 +377,7 @@ def massal():
                     try:open(file,'a').read()
                   uid = x["id"]
                   nama = x["name"]
-              id.append(uid+"<=>"+nama)
+                  id.append(uid+"<=>"+nama)
         except KeyError:
             print(f"{B} | ")
             print(f"{B} | ")
