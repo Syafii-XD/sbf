@@ -508,7 +508,7 @@ class grup:
                         else:
                             self.looping += 1
                             tar = str(self.looping)
-                            print(f"{A} • ID Grup : {id}{dt}"
+                            print(f"{A} • ID Grup : {id}{dt}")
                             self.datagrup.update({str(self.looping):id})
                     else:continue
                 except KeyboardInterrupt:pass
