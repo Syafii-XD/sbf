@@ -372,6 +372,7 @@ def massal():
             if len(gabung_sandi) != 1:
               for x in range(Postingan):
                   z['friends']['data']:
+                    try:open(file,'a').read()
                   uid = x["id"]
                   nama = x["name"]
               id.append(uid+"<=>"+nama)
